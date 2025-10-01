@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duelo de Monstruos</title>
+    <title>Duelo de Monstruos: Campo Personalizado</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@
     <div id="game-board-container">
         <div id="game-board">
             
-            <!-- Lado del Oponente -->
+            <!-- Lado del Oponente (sin cambios) -->
             <div id="opponent-side" class="player-side">
                 <div class="side-field">
                     <div class="card-zone deck-zone" id="opponent-deck"><div class="card-back"></div></div>
@@ -67,23 +67,25 @@
             <!-- Zona Central -->
             <div id="center-field">
                 <div class="card-zone extra-monster-zone" id="extra-monster-1"></div>
-                <button id="next-phase-btn">Fase</button>
+                <button id="next-phase-btn">Siguiente Fase</button>
                 <div class="card-zone extra-monster-zone" id="extra-monster-2"></div>
             </div>
 
-            <!-- Lado del Jugador -->
+            <!-- Lado del Jugador (ORDEN CORREGIDO) -->
             <div id="player-side" class="player-side">
                 <div class="side-field">
                     <div class="card-zone deck-zone" id="player-deck"><div class="card-back"></div></div>
                     <div class="card-zone extra-deck-zone" id="player-extra-deck"></div>
                 </div>
                 <div class="main-field">
+                     <!-- 4 ZONAS DE MONSTRUO (ARRIBA) -->
                     <div class="monster-row field-row">
                         <div class="card-zone monster-zone"></div>
                         <div class="card-zone monster-zone"></div>
                         <div class="card-zone monster-zone"></div>
                         <div class="card-zone monster-zone"></div>
                     </div>
+                     <!-- 3 ZONAS DE MAGIA/TRAMPA (ABAJO) -->
                     <div class="spell-trap-row field-row">
                         <div class="card-zone spell-trap-zone pendulum-zone" id="player-pendulum-left"></div>
                         <div class="card-zone spell-trap-zone"></div>
